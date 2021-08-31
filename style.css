@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	overflow: hidden;
+}
+.wrapper {
+	
+	height: 100vh;
+	background-color: #800080;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.line {
+	z-index: 2;
+	background-color: #fff;
+	height: 3vh;
+	width: 1px;
+	border-radius: 50px;
+	position: absolute;
+	top: 50%;
+	left: -1vw;
+	animation: gogo 3s linear forwards;
+}
+.text {
+
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	font-family: 'Roboto';
+	font-size: 10vw;
+	letter-spacing: 1px;
+}
+
+@keyframes gogo {
+	to {
+		width: 102vw;
+	}
+}
+
+.overline {
+	z-index: 22;
+}
